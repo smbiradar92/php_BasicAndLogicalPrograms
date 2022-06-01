@@ -1,11 +1,11 @@
 <?php
 
-function abc($carName){
+function abc($carName)
+{
     //echo "Hello World \n";
-    echo $carName ."\n";
+    echo $carName . "\n";
 }
 
 abc("BMW \n");
-abc ("Ferrari \n");
-
+abc("Ferrari \n");
 ?>
