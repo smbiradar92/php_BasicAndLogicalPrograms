@@ -8,10 +8,9 @@ $y = readline("Please enter the value of y :");
 function calculateDistance($x, $y)
 {
 
-     $distance = sqrt(pow($x, 2) + pow($y, 2));                                 // Eucledian formula for distance
+     $distance = sqrt($x * $x + $y * $y);                                 // Eucledian formula for distance
      echo "The distance between the point, ($x, $y) and the origin, (0, 0) is: " . round($distance, 2);    // printing the values and distance
 
 }
 
 calculateDistance($x, $y);                              // caling function to calculate distance
-?>

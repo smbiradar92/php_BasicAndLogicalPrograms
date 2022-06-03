@@ -8,9 +8,9 @@ if (is_numeric($coinFlipped) && $coinFlipped > 0) {
     for ($i = 0; $i < $coinFlipped; $i++) {
         $result = rand(0, 10) / 10;
         if ($result >= 0.5) {
-            $headcount++; //incrementing headcount
+            $headcount++;                   //incrementing headcount
         } else {
-            $tailcount++; //incrementing tailcount
+            $tailcount++;                   //incrementing tailcount
         }
     }
 } else {

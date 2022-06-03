@@ -18,4 +18,3 @@ function generateCouponNumber($char, $N, $len)                  // function to g
 }
 
 generateCouponNumber($char, $N, $len);                  // calling function
-?>
