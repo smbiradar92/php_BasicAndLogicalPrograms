@@ -1,15 +1,15 @@
 <?php
-echo "------------Coupon generator----------------";
+echo "------------Coupon generator----------------\n";
 
-$char = "ABCDEFGHIJKLMNOPQRSTUVWX1234657890";                                       //Defining a variablw of charectes
-$N = readline("Please enter the no of distinct coupon numbers to be generated N : ");       // inputs from user
+$char = "ABCDEFGHIJKLMNOPQRSTUVWX1234657890";                                       //Defining a variable of charectes
+$num = readline("Please enter the no of distinct coupon numbers to be generated num : ");       // inputs from user
 $len = readline("Please enter the length of the coupon number : ");
 
-function generateCouponNumber($char, $N, $len)                  // function to generate coupon numbers
+function generateCouponNumber($char, $num, $len)                  // function to generate coupon numbers
 {
     echo "Coupons genrated are : \n";
-    for ($j = 0; $j <= $N; $j++) {                          // Looping to get coupon numbers from given variable
-        for ($i = 0; $i <= $len; $i++) {
+    for ($j = 0; $j < $num; $j++) {                          // Looping to get coupon numbers from given variable
+        for ($i = 0; $i < $len; $i++) {
             $random = str_shuffle($char);
             echo $random[0];
         }
@@ -17,4 +17,4 @@ function generateCouponNumber($char, $N, $len)                  // function to g
     }
 }
 
-generateCouponNumber($char, $N, $len);                  // calling function
+generateCouponNumber($char, $num, $len);                  // calling function

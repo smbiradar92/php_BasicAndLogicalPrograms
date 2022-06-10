@@ -14,10 +14,10 @@ class DayOfWeek
         $year = readline("Enter the year in format YYYY: ");
 
         //calculations for calculating day
-        $prevYear = $year - (14 - $month) / 12;
-        $x = $prevYear + ($prevYear / 4) - ($prevYear / 100) + ($prevYear / 400);
-        $prevMonth = $month + (12 * (14 - $month) / 12) - 2;
-        $dayOfWeek = ($day + $x + (31 * $prevMonth / 12)) % 7;
+        $initYear = $year - (14 - $month) / 12;
+        $x = $initYear + ($initYear / 4) - ($initYear / 100) + ($initYear / 400);
+        $initMonth = $month + (12 * (14 - $month) / 12) - 2;
+        $dayOfWeek = ($day + $x + (31 * $initMonth / 12)) % 7;
         $output = $dayList[$dayOfWeek];
 
         echo "For the input date $day-$month-$year, the day is " . $output . "\n";        // print output

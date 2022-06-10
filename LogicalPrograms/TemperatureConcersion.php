@@ -9,6 +9,7 @@ class TemperatureConversion
         $temperature = readline("Please enter the value of tempetature: ");
         $option = readline("Please enter from the below options to convert the value of tempetature: \n 1. Celcius to Farhenite\t 2. Farhenite to Celcius");
 
+        if(is_numeric($temperature) && is_numeric($option)){
         switch ($option) {                          //switch case to conver the temp based on user input
             case 1:
                 $Farhenite = (($temperature * 9 / 5) + 32);                 // Celcius to Farhenite conversion
@@ -21,7 +22,10 @@ class TemperatureConversion
             default:
                 echo "Please enter a valid input!!!!";
         }
+    }else{
+    echo "invalid input";
     }
+}
 }
 $temp = new TemperatureConversion();        //creating object
 $temp->temperatureConversion();             //calling function

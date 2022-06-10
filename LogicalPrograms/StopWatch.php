@@ -4,7 +4,6 @@ echo "-------------Stopwatch program-----------\n";
 //initialising variables
 $time_start = 0;
 $time_stop = 0;
-$stop = 0;
 $start = readline("Please enter 1 to start the watch : ");                  //input from user to start the time
 
 if ($start == 1) {                                                        // condition to start the watch
