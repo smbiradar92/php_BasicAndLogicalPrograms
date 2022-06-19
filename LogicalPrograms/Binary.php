@@ -2,7 +2,7 @@
 
 function decimalToBinary($decimalNum)
 {
-
+ 
     $nibble1 = [];
     $nibble2 = [];
     $swapNibble = [];

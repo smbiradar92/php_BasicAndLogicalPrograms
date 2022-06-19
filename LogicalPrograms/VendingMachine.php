@@ -19,7 +19,7 @@ class VendCoin
             }
         }
 
-        if ($flag) {
+        if ($flag = true) {
             VendCoin::coins($notes, $tempAmount);
         }
         return $totalNotes;
